@@ -1,0 +1,4 @@
+.env
+venv/
+patients.db
+logs/
