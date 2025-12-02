@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small-hero">
+  <h2>Patient Registration Form</h2>
+</section>
+
+<main class="form-container">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <form method="POST">
+    <div class="grid-form">
+      <div class="form-group">
+        <label for="patient_id">Patient ID</label>
+        <input type="text" name="patient_id" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="hypertension">Hypertension</label>
+        <select name="hypertension" required>
+          <option value="">Select</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ever_married">Ever Married</label>
+        <select name="ever_married" required>
+          <option value="">Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="work_type">Work Type</label>
+        <select name="work_type" required>
+          <option value="">Select</option>
+          <option value="Private">Private</option>
+          <option value="Self-employed">Self-employed</option>
+          <option value="Govt_job">Govt Job</option>
+          <option value="Children">Children</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="residence_type">Residence Type</label>
+        <select name="residence_type" required>
+          <option value="">Select</option>
+          <option value="Urban">Urban</option>
+          <option value="Rural">Rural</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="avg_glucose_level">Avg. Glucose Level</label>
+        <input type="number" step="0.1" name="avg_glucose_level" required>
+      </div>
+      <div class="form-group">
+        <label for="bmi">BMI</label>
+        <input type="number" step="0.1" name="bmi" required>
+      </div>
+      <div class="form-group">
+        <label for="smoking_status">Smoking Status</label>
+        <select name="smoking_status" required>
+          <option value="">Select</option>
+          <option value="formerly smoked">Formerly Smoked</option>
+          <option value="never smoked">Never Smoked</option>
+          <option value="smokes">Smokes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="stroke">Stroke</label>
+        <select name="stroke" required>
+          <option value="">Select</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn">Submit Registration</button>
+  </form>
+</main>
+{% endblock %}

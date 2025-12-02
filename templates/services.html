@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="banner">
+  <img src="{{ url_for('static', filename='images/services.jpg') }}" alt="Services Banner">
+</section>
+
+<main class="services-wrapper">
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2967/2967486.png" alt="Cardiology">
+      <h3>Cardiology</h3>
+      <p>Comprehensive care for heart conditions including diagnostics, treatment, and rehabilitation.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966468.png" alt="Neurology">
+      <h3>Neurology</h3>
+      <p>Expert care for neurological disorders with advanced diagnostics and personalized treatment plans.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966470.png" alt="Pediatrics">
+      <h3>Pediatrics</h3>
+      <p>Dedicated care for infants, children, and adolescents focusing on growth, development, and health.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966481.png" alt="Diagnostics">
+      <h3>Diagnostics</h3>
+      <p>State-of-the-art diagnostic services including imaging, lab tests, and screenings.</p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

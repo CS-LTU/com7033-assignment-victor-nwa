@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small-hero">
+  <h2>My Patient Info</h2>
+</section>
+
+<main class="content">
+  <section class="card">
+    {% if patient %}
+      <table class="data-table">
+        <tr><th>Patient ID</th><td>{{ patient.patient_id }}</td></tr>
+        <tr><th>Gender</th><td>{{ patient.gender }}</td></tr>
+        <tr><th>Age</th><td>{{ patient.age }}</td></tr>
+        <tr><th>Hypertension</th><td>{{ patient.hypertension }}</td></tr>
+        <tr><th>Ever Married</th><td>{{ patient.ever_married }}</td></tr>
+        <tr><th>Work Type</th><td>{{ patient.work_type }}</td></tr>
+        <tr><th>Residence Type</th><td>{{ patient.residence_type }}</td></tr>
+        <tr><th>Avg Glucose Level</th><td>{{ patient.avg_glucose_level }}</td></tr>
+        <tr><th>BMI</th><td>{{ patient.bmi }}</td></tr>
+        <tr><th>Smoking Status</th><td>{{ patient.smoking_status }}</td></tr>
+        <tr><th>Stroke</th><td>{{ patient.stroke }}</td></tr>
+      </table>
+    {% else %}
+      <p>You haven't registered your patient info yet.</p>
+      <a href="{{ url_for('register_patient') }}" class="btn">Register Now</a>
+    {% endif %}
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small-hero">
+  <h2>Patient Dashboard</h2>
+</section>
+
+<main class="content">
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Gender</th><th>Age</th><th>Hypertension</th>
+          <th>Married</th><th>Work</th><th>Residence</th>
+          <th>Glucose</th><th>BMI</th><th>Smoking</th><th>Stroke</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in patients %}
+        <tr>
+          <td>{{ p.patient_id }}</td>
+          <td>{{ p.gender }}</td>
+          <td>{{ p.age }}</td>
+          <td>{{ p.hypertension }}</td>
+          <td>{{ p.ever_married }}</td>
+          <td>{{ p.work_type }}</td>
+          <td>{{ p.residence_type }}</td>
+          <td>{{ p.avg_glucose_level }}</td>
+          <td>{{ p.bmi }}</td>
+          <td>{{ p.smoking_status }}</td>
+          <td>{{ p.stroke }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</main>
+{% endblock %}

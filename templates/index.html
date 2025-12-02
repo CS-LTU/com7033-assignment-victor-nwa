@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h2>Your Health, Our Priority</h2>
+    <p>Welcome to SecureCare Hospital’s digital portal. Register safely and access stroke information securely.</p>
+  </div>
+  <img src="{{ url_for('static', filename='images/doctor.jpg') }}" alt="Doctor Illustration">
+</section>
+
+<section class="hospital-info">
+  <div class="info-grid">
+    <div class="info-box">
+      <h3>🕒 Hospital Hours</h3>
+      <ul>
+        <li>Monday – 24hrs</li>
+        <li>Tuesday – 24hrs</li>
+        <li>Wednesday – 24hrs</li>
+        <li>Thursday – 24hrs</li>
+        <li>Friday – 24hrs</li>
+        <li>Saturday – 24hrs</li>
+        <li>Sunday – 24hrs</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h3>📍 Address</h3>
+      <p>1234 Care Road<br>London, United Kingdom</p>
+
+      <h3>📞 Contact</h3>
+      <p>Email: <a href="mailto:securecare@hospital.com">securecare@hospital.com</a></p>
+      <p>Phone: +44 123 456 7890</p>
+    </div>
+
+    <div class="info-box">
+      <h3>🌐 Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

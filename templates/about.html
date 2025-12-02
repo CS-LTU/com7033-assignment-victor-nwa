@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small-hero">
+  <h2>About SecureCare Hospital</h2>
+</section>
+
+<main class="content">
+  <section class="card">
+    <h2>Who We Are</h2>
+    <p>SecureCare Hospital is a leading healthcare institution dedicated to excellence in patient care, advanced research, and medical innovation.</p>
+
+    <h2>Our Mission</h2>
+    <p>To provide high-quality, safe, and affordable healthcare to every patient through innovation, education, and collaboration.</p>
+
+    <h2>Our Vision</h2>
+    <p>To be recognized as a center of excellence in healthcare, improving lives and promoting wellness for all.</p>
+
+    <img src="{{ url_for('static', filename='images/hospital_building.jpg') }}" alt="Hospital Building" class="about-img">
+  </section>
+</main>
+{% endblock %}
