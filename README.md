@@ -1,4 +1,4 @@
 # com7033-assignment-victor-nwa
-Nwachukwu Victor 
+Victor Nwachukwu
 2509494
 com7033-assignment-victor-nwa created by GitHub Classroom
