@@ -100,7 +100,7 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
 
 
 
-- Project Technology Stack
+- Project Technology Stack:
 
   - Language -	Python - Main backend programming language used for application logic
   - Framework -	Flask -	Lightweight web framework for routing, views, forms, and backend operations
