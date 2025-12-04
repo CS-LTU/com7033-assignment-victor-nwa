@@ -97,3 +97,31 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
 2. encryption in transit and at rest
 3. input validation
 4. Authentication & Authorization
+
+- Project Technology Stack
+
+- Category	Requirement	Purpose
+- Language	Python	Backend logic
+- Framework	Flask	Web framework
+- Frontend	HTML, CSS	User interface
+- Databases	SQLite, MongoDB	Auth + patient data
+- Security	bcrypt, CSRF, HTTPS	Protection mechanisms
+- Version Control	Git & GitHub	Collaboration
+- Deployment	Flask dev server	Local testing
+
+
+
+
+- Project Technology Stack
+
+- Category	Requirement / Technology	Purpose / Description
+- Language	Python	Main backend programming language used for application logic
+- Framework	Flask	Lightweight web framework for routing, views, forms, and backend operations
+- Frontend	HTML, CSS, JavaScript	Builds the user interface and handles styling + basic interactivity
+- Databases	SQLite, MongoDB Atlas	SQLite for authentication + local storage, MongoDB for patient medical data
+- Security	bcrypt, CSRF Protection, Input Validation, HTTPS (when deployed)	Protects passwords, prevents attacks, ensures safe data handling
+- Environment	Virtual Environment (venv)	Isolates project dependencies for clean, reproducible setup
+- Configuration	.env + Config.py	Stores secrets securely and configures DB connections
+- Version Control	Git + GitHub	Code tracking, submission, and collaboration
+- Testing	PyTest	Ensures routes (login, register, patient creation) work correctly
+- Deployment	Flask Development Server	Local execution for testing the app
