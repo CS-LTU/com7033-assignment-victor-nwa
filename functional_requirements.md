@@ -31,7 +31,7 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
 - Goal: Authenticate user and login
 - Preconditions: User must have a valid username and password and a good internet connection
 
-- Main flow:
+- MAIN FLOW:
 
 1. User navigates to the registration page. 
 2. User enters details (username and password). 
@@ -112,3 +112,26 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
   - Version Control -	Git + GitHub -	Code tracking, submission, and collaboration
   - Testing -	PyTest -	Ensures routes (login, register, patient creation) work correctly
   - Deployment -	Flask Development Server -	Local execution for testing the app
+
+
+### INSTALLATION & SETUP 
+
+- Repository: https://github.com/CS-LTU/com7033-assignment-victor-nwa
+
+  - cd com7033-assignment-victor-nwa
+
+
+- Virtual Enviroment
+
+  - source venv/scripts/activate
+
+
+- Running Flask app: python app.py
+
+  - Access it at; http://127.0.0.1:5000
+
+
+### ADMIN LOGIN DETAILS FOR MY APP
+
+  - Username: admin 
+  - Password: admin123
