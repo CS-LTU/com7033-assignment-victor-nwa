@@ -26,10 +26,10 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
   - Delete patient information  
 
 ### Use Case 1 — User Registration and Login
-- Use Case Name: User Registration and Login
-- Actor: Patients
-- Goal: Authenticate user and login
-- Preconditions: User must have a valid username and password and a good internet connection
+  - Use Case Name: User Registration and Login
+  - Actor: Patients
+  - Goal: Authenticate user and login
+  - Preconditions: User must have a valid username and password and a good internet connection
 
 - MAIN FLOW:
 
@@ -56,16 +56,16 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
 
 
 ### Use Case 2 — Admin/Doctor Management
-- Use Case Name: Admin/Doctor Management
-- Actor: Admin/Doctor
-- Goal: 
-  - Authenticate admin login
-  - Allow an authorized admin to access the admin dashboard, manage patient records, and view patient details
-- Preconditions: 
-  - Admin must already exist in the system (created beforehand)
-  - Admin must provide valid admin credentials to log in
-  - System must have an active database connection
-  - Admin must have a stable internet connection
+  - Use Case Name: Admin/Doctor Management
+  - Actor: Admin/Doctor
+  - Goal: 
+    - Authenticate admin login
+    - Allow an authorized admin to access the admin dashboard, manage patient records, and view patient details
+  - Preconditions: 
+    - Admin must already exist in the system (created beforehand)
+    - Admin must provide valid admin credentials to log in
+    - System must have an active database connection
+    - Admin must have a stable internet connection
 
 - Main flow:
 
