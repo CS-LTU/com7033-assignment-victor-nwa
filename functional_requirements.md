@@ -131,6 +131,16 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
   - Access it at; http://127.0.0.1:5000
 
 
+- Install dependencies
+
+  pip install -r requirements.txt
+
+
+- Configure environment variable 
+
+  - create an .env file in the project root and set up
+
+
 ### ADMIN LOGIN DETAILS FOR MY APP
 
   - Username: admin 
