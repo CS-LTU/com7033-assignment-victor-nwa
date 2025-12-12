@@ -118,6 +118,8 @@ WEB APP FOR HOSPITAL TO MANAGE PATIENTS DATA AND STROKE
 
 - Repository: https://github.com/CS-LTU/com7033-assignment-victor-nwa
 
+  - git clone https://github.com/CS-LTU/com7033-assignment-victor-nwa.git
+
   - cd com7033-assignment-victor-nwa
 
 
